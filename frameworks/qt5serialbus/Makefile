@@ -8,9 +8,9 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=qt5serialbus
-PKG_VERSION:=5.15.13
+PKG_VERSION:=5.15.16
 PKG_RELEASE:=1
-PKG_HASH:=f781ea8621d60800b8a20ba4964c06afd1e9b9e959e363226bd0fc4ccc2e8919
+PKG_HASH:=8d600747367532ed563e75b8ace8dc2e4e4fca9280a964281b2a1ad49e0eeab6
 
 PKG_SYS_NAME:=qtserialbus-everywhere-src-$(PKG_VERSION)
 PKG_SOURCE:=qtserialbus-everywhere-opensource-src-$(PKG_VERSION).tar.xz
