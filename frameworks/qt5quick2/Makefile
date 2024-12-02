@@ -8,9 +8,9 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=qt5quick2
-PKG_VERSION:=5.15.13
+PKG_VERSION:=5.15.16
 PKG_RELEASE:=1
-PKG_HASH:=690eaee7416ba89a4823d55c1a6bb73f4c8740663382ad39fbe46f78fa75ec26
+PKG_HASH:=4e05de0747176a8a86a8c098ad215c2cdf1825a572b62a70b2e91cd81357408d
 
 PKG_SYS_NAME:=qtdeclarative-everywhere-src-$(PKG_VERSION)
 PKG_SOURCE:=qtdeclarative-everywhere-opensource-src-$(PKG_VERSION).tar.xz
