@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
  
 PKG_NAME:=ProtoGen
-PKG_RELEASE:=2
+PKG_RELEASE:=3
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/billvaglienti/ProtoGen.git
@@ -35,6 +35,11 @@ define Host/Install
 
 	$(INSTALL_DIR) $(STAGING_DIR_HOST)/bin
 	$(CP) $(HOST_BUILD_DIR)/ProtoGen $(STAGING_DIR_HOST)/bin/
+
+	# Crea un link simbolico per l'uso durante la compilazione incrociata.
+	# Questo link fa in modo che lo strumento sia accessibile da $(STAGING_DIR)/host/bin,
+	# che è dove i makefile di qmake tendono a cercare i tool host.
+	$(INSTALL_DIR) $(STAGING_DIR)/host/bin
 	ln -sf $(STAGING_DIR_HOST)/bin/ProtoGen $(STAGING_DIR)/host/bin/
 endef
 
